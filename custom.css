@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+body{
+    font-family:'Montserrat';
+}
+.bg-primary{
+    background-color:rgb(222, 0, 0) !important;
+    color:white !important;
+}
+.navbar-dark .navbar-nav .nav-link a:hover{
+    color:white !important;
+    font-weight:500 !important;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:white !important;
+    font-weight:300;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:rgb(36, 36, 36) !important;
+    font-weight:400;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color:white !important;
+    font-weight:500 !important;
+    margin-left:10px;
+    margin-right:10px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color:rgb(36, 36, 36) !important;
+    font-weight:500 !important;
+    margin-left:10px;
+    margin-right:10px;
+}
+.nav-item{
+    margin-right:12px;
+}
+.searchbar{
+    background:none;
+    border:1px solid rgb(157, 157, 157);
+    border-radius:100px;
+    outline-color:white;
+    text-align: right;  
+    padding-left:20px;
+}
+.searchbar input{
+    background:none;
+    border:none;
+    color:white;
+    width:80px;
+    transition: 0.3s;
+    
+}
+.searchbar input::placeholder{
+    color:rgb(33, 33, 33);
+}
+.searchbar input:hover{
+    color:rgb(49, 49, 49);
+    outline:none;
+    width:150px;
+    padding:5px;
+}
+.searchbar input:focus{
+    color:rgb(49, 49, 49);
+    outline:none;
+    width:150px;
+    padding:5px;
+}
+.searchbar button{
+    border-radius:100px;
+    background:white;
+    color:black;
+    border:none;
+}
+section .section-title{
+    text-align: center !important;
+    margin-bottom:100px !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+section .section-title::after{
+    content:"";
+    background-image:url('images/buku_v.png');
+    background-size:cover;
+    width:100px;
+    height:20px;
+    position: absolute;
+    bottom:-30px;
+}
+hr{
+    border:2px solid rgb(211, 0, 0);
+}
+#news{
+    background:rgb(247, 247, 247);
+}
+#news .card,#teams .card{
+    border:none;
+    background:none;
+}
+#news .card-title{
+    font-weight: 600;
+}
+#news .card .card-title::before,
+#video_profile .card-title::before
+{
+    content:"";
+    height:50px;
+    width:10px;
+    position: absolute;
+    left:20px;
+    background-image: url('images/buku.png');
+    background-size: cover;
+}
+@media (min-width: 1200px){
+    .container{
+        max-width:1336px;
+    }
+    #hero2 img{
+        /* height:100%; */
+        transform: scale(150%);
+        
+     }
+    
+}
+@media screen and (max-width:756px){
+    p{
+        font-size:12px;
+    }
+    h1{
+        font-size:24px;
+    }
+    #mitra img{    
+        height:40px;
+        margin:0px;
+    }
+    #hero2 img{
+        height:100%;
+        margin-bottom:50px;
+     }
+     footer{
+         font-size: 12px;
+     }
+     .searchbar{
+         width:100%;
+         display:block;
+     }
+}
+#teams img{
+    border-radius:100%;
+    width:60%;
+    margin:auto;
+}
+#services{
+}
+#services .card{
+    transition:.3s;
+    border:none !important;
+    transform:  scale(95%) translateY(-150px);
+}
+#services .card-img-top{
+    width:80% !important;
+    margin:auto;
+}
+#services .card:hover{
+    transform: scale(110%) !important;
+}
+#hero2{
+    background:rgb(211, 0, 0);
+    color:white;
+}
+#hero2 a{
+    color:white;
+    font-weight: 600;
+}
+#mitra img{    
+    max-height:75px;
+    margin:50px;
+}
+#mitra .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background:rgb(83, 83, 83);
+}
+footer .bottom-footer{
+    padding:10px;
+    background-color: rgb(48, 48, 48);
+}
+#offer{
+    background-color:rgb(213, 213, 213);    
+}
+#faq{
+    background-color:rgb(240, 240, 240);    
+}
+
+#offer p{
+    color:rgb(211, 0, 0);
+}
+.btn-primary{
+    background-color: rgb(211, 0, 0) !important;
+    color:white;
+    background:none;
+    border:1px solid white;
+    border-radius:0px;
+    padding:10px 20px 10px 20px;
+}
+.btn-primary a i{
+    font-size:20px !important;
+    color:white;
+}
+/* .navbar::after{
+    content:"";
+    background-color: red;
+    height:5px;
+    width:100%;
+    position: absolute;
+    bottom:-10px;
+    z-index:10;
+    left:0;
+} */
+.navbar{
+    box-shadow:-1px 8px 20px 0px #00000024;
+    z-index:20;
+    position: fixed;
+    width:100%;
+    top:0;
+    background:white;
+}
+.space-nav{
+    margin-top:100px;
+}
+.navbar .container{
+    max-width:1400px !important;
+}
+.navbar .dropdown-menu{
+    min-width:auto !important;
+}
+footer{
+    font-size:12px;
+    
+}
+footer ul{
+    list-style:none;
+    padding:0;
+    line-height: 30px !important;
+}
+footer a{
+    color:rgb(205, 205, 205) !important;
+}
+.owl-item{
+    width:1340px !important;
+}
+.owl-carousel .owl-item img{
+    display: inline;
+    width:auto !important;
+}
+.social-media-links{
+    list-style:none !important;
+    padding:none;
+}
+.social-media-links li{
+    display: inline !important;
+    margin-left:10px;
+    margin-right:10px;
+}
+.social-media-links li a{
+    font-size:42px;
+    color: rgb(38, 38, 38);
+}
+.social-media-links li a:hover{
+    text-decoration: none;
+}
+
+.fade-fromTop .fade-item{
+    opacity: 0;
+    transform:translateY(-150px);
+    transition: 1s !important;
+}
+.fade-fromLeft .fade-item{
+    opacity: 0;
+    transform:translateX(-150px);
+    transition: 1s !important;
+}
+.fade-fromRight .fade-item{
+    opacity: 0;
+    transform:translateX(150px);
+    transition: 1s !important;
+}
+
+.text-primary{
+    color:rgb(211, 0, 0) !important;
+}
+#faq button{
+    max-height:45px;
+}
